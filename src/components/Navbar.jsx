@@ -2,18 +2,22 @@ import img from "../assets/profile-picture.png";
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between items-center h-20 md:pr-4 bg-gray-200 text-gray-800">
-      <div className="flex justify-around lg:justify-evenly ml-2 items-center w-6/12 md:w-3/12 lg:w-2/12 lg:ml-0 ">
+    <div className="flex justify-between items-center h-20 md:pr-4 bg-white text-gray-800">
+      <div className="flex justify-around lg:justify-evenly ml-2 lg:ml-4 items-center">
         <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-          <div className="w-10 lg:w-full rounded-full border-gray-600 border-2">
-            <img src={img} alt="Photo de Anaïs Cavaillé" />
-          </div>
+          <a href={img} target="_blank" rel="noreferrer">
+            <img
+              src={img}
+              alt="Photo de Anaïs Cavaillé"
+              className=" border-gray-600 border-2 btn btn-ghost btn-circle avata"
+            />
+          </a>
         </label>
-        <a className="text-xl lg:text-2xl">Anaïs Cavaillé</a>
+        <a className="text-xl lg:text-2xl ml-2 lg:ml-4">Anaïs Cavaillé</a>
       </div>
-      <div className="">
-        <div className="dropdown lg:hidden">
-          <label tabIndex={0} className="btn btn-ghost lg:hidden">
+      <div>
+        <div className="dropdown md:hidden">
+          <label tabIndex={0} className="btn btn-ghost md:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -31,7 +35,7 @@ const Navbar = () => {
           </label>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-4 z-[1] text-gray-800 bg-gray-200 w-26 right-0"
+            className="menu menu-sm dropdown-content mt-3 z-[1] text-gray-800 bg-gray-100 w-26 right-0"
           >
             <li>
               <a>Accueil</a>
@@ -39,51 +43,24 @@ const Navbar = () => {
             <li>
               <a>Compétences</a>
             </li>
-            <li tabIndex={0}>
-              <details>
-                <summary>Projets</summary>
-                <ul className="py-2">
-                  <li>
-                    <a>Wild-Quizz</a>
-                  </li>
-                  <li>
-                    <a>MCU-Timeline</a>
-                  </li>
-                  <li>
-                    <a>Projet 3</a>
-                  </li>
-                </ul>
-              </details>
+            <li>
+              <a>Projets</a>
             </li>
-
             <li>
               <a>Contact</a>
             </li>
           </ul>
         </div>
-        <div className="hidden lg:flex">
-          <ul className="menu menu-horizontal px-1 lg:text-xl">
+        <div className="hidden md:flex">
+          <ul className="menu menu-horizontal px-1 md:text-lg lg:text-xl">
             <li>
               <a>Accueil</a>
             </li>
             <li>
               <a>Compétences</a>
             </li>
-            <li tabIndex={0}>
-              <details>
-                <summary>Projets</summary>
-                <ul className="menu menu-sm dropdown-content text-gray-800 rounded-none flex flex-col flex-wrap w-36 bg-gray-200">
-                  <li>
-                    <a>Wild-Quizz</a>
-                  </li>
-                  <li>
-                    <a>MCU-Timeline</a>
-                  </li>
-                  <li>
-                    <a>Projet 3</a>
-                  </li>
-                </ul>
-              </details>
+            <li>
+              <a>Projets</a>
             </li>
             <li>
               <a>Contact</a>
