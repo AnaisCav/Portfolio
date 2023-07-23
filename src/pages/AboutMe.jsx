@@ -3,8 +3,9 @@ import Skills from "../components/Skills";
 const AboutMe = () => {
   return (
     <div className="bg-almost-white h-full md:h-screen text-black flex flex-col items-center justify-between md:justify-around">
-      <div className="text-center mx-6 md:mx-36 my-16 md:my-0 lg:mx-72">
-        <h1 className="font-bold text-3xl lg:text-4xl mb-8">ABOUT ME</h1>
+      <div className="text-center mx-6 md:mx-36 my-16 md:my-0 lg:mx-72 flex flex-col items-center">
+        <h1 className="font-bold text-3xl lg:text-4xl">ABOUT ME</h1>
+        <p className="bg-blue-bg h-1 rounded-lg my-6 w-10" />
         <p className="text-gray-500">
           Vous trouverez ci-dessous plus d&apos;informations sur mon parcours,
           mes projets et mes compétences actuelles en termes de programmation.

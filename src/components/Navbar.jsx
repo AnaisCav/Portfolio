@@ -52,19 +52,19 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="hidden md:flex">
-          <ul className="menu menu-horizontal px-1 md:text-lg lg:text-xl">
-            <li>
-              <a>Accueil</a>
-            </li>
-            <li>
-              <a>Compétences</a>
-            </li>
-            <li>
-              <a>Projets</a>
-            </li>
-            <li>
-              <a>Contact</a>
-            </li>
+          <ul className="flex gap-5 px-1 md:text-lg lg:text-xl">
+            <button className="hover:text-blue-bg">
+              <li>Accueil</li>
+            </button>
+            <button className="hover:text-blue-bg">
+              <li>Compétences</li>
+            </button>
+            <button className="hover:text-blue-bg">
+              <li>Projets</li>
+            </button>
+            <button className="hover:text-blue-bg">
+              <li>Contact</li>
+            </button>
           </ul>
         </div>
       </div>

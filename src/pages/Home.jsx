@@ -1,4 +1,6 @@
 import AboutMe from "./AboutMe";
+import Contact from "./Contact";
+import Projets from "./Projets";
 
 const Home = () => {
   return (
@@ -18,6 +20,8 @@ const Home = () => {
         </div>
       </div>
       <AboutMe />
+      <Projets />
+      <Contact />
     </div>
   );
 };
