@@ -6,8 +6,10 @@ import "./index.css";
 
 function App() {
   return (
-    <div>
-      <Navbar />
+    <div className="relative">
+      <div className="sticky top-0 w-full">
+        <Navbar />
+      </div>
       <AppRoutes />
       <Footer />
     </div>
