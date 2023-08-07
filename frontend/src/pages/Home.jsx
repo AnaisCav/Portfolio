@@ -1,6 +1,6 @@
 import AboutMe from "./AboutMe";
 import Contact from "./Contact";
-import Projets from "./Projets";
+import Projets from "./Projects";
 
 const Home = () => {
   return (

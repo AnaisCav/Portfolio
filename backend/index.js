@@ -29,18 +29,17 @@ const createPoolInstance = () => {
 };
 const pool = createPoolInstance();
 
-app.get("/projets", async (req, res) => {
-  const sql = "SELECT * FROM projet;";
+app.get("/projects", async (req, res) => {
+  const sql = "SELECT * FROM project;";
 
   try {
-    const [projet] = await pool.query(sql);
-    res.send(projet);
+    const [project] = await pool.query(sql);
+    res.send(project);
   } catch (err) {
     console.error(err);
     res.sendStatus(500);
   }
 });
-
 
 app.listen(port, (err) => {
   if (err) {
