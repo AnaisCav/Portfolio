@@ -13,6 +13,7 @@ const Projets = () => {
         setProjectData(response.data);
       })
       .catch((error) => console.error(error));
+    window.scrollTo(0, 0);
   }, []);
 
   if (projectsData.length > 0) {

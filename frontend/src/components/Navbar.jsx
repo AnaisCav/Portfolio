@@ -1,9 +1,10 @@
+import { Link } from "react-router-dom";
 import img from "../assets/profile-picture.png";
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between items-center h-20 md:pr-4 bg-white text-gray-800">
-      <div className="flex justify-around lg:justify-evenly ml-2 lg:ml-4 items-center">
+    <div className="flex justify-between items-center h-20 lg:h-24 md:pr-4 bg-white text-gray-800">
+      <div className="flex justify-around lg:justify-evenly ml-4 md:ml-6 lg:ml-12 items-center">
         <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
           <a href={img} target="_blank" rel="noreferrer">
             <img
@@ -13,14 +14,18 @@ const Navbar = () => {
             />
           </a>
         </label>
-        <a className="text-xl lg:text-2xl ml-2 lg:ml-4">Anaïs Cavaillé</a>
+        <Link to="/">
+          <p className="text-lg md:text-md lg:text-xl font-bold ml-2 lg:ml-4">
+            ANAÏS CAVAILLÉ
+          </p>
+        </Link>
       </div>
       <div>
         <div className="dropdown md:hidden">
           <label tabIndex={0} className="btn btn-ghost md:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
+              className="h-7 w-7"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -29,41 +34,43 @@ const Navbar = () => {
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth="2"
-                d="M4 6h16M4 12h8m-8 6h16"
+                d="M4 6h16M4 12h16M4 18h16"
               />
             </svg>
           </label>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] text-gray-800 bg-gray-100 w-26 right-0"
+            className="menu menu-sm dropdown-content mt-2 z-[1] text-gray-800 bg-white w-96 right-0"
           >
-            <li>
-              <a>Accueil</a>
+            <li className="h-16 border-t-2 font-bold flex justify-center items-end pr-2 border-gray-200">
+              <Link to="/">ACCUEIL</Link>
             </li>
-            <li>
-              <a>Compétences</a>
+            <li className="h-16 border-t-2 font-bold flex justify-center items-end pr-2 border-gray-200">
+              <a>COMPÉTENCES</a>
             </li>
-            <li>
-              <a>Projets</a>
+            <li className="h-16 border-t-2 font-bold flex justify-center items-end pr-2 border-gray-200">
+              <a>PROJETS</a>
             </li>
-            <li>
-              <a>Contact</a>
+            <li className="h-16 border-t-2 font-bold flex justify-center items-end pr-2 border-gray-200">
+              <a>CONTACT</a>
             </li>
           </ul>
         </div>
         <div className="hidden md:flex">
-          <ul className="flex gap-5 px-1 md:text-lg lg:text-xl">
+          <ul className="flex md:gap-7 lg:gap-12 px-1 md:text-sm lg:text-lg font-bold md:mr-4 lg:mr-12">
             <button className="hover:text-blue-bg">
-              <li>Accueil</li>
+              <Link to="/">
+                <li>ACCUEIL</li>
+              </Link>
             </button>
             <button className="hover:text-blue-bg">
-              <li>Compétences</li>
+              <li>COMPÉTENCES</li>
             </button>
             <button className="hover:text-blue-bg">
-              <li>Projets</li>
+              <li>PROJETS</li>
             </button>
             <button className="hover:text-blue-bg">
-              <li>Contact</li>
+              <li>CONTACT</li>
             </button>
           </ul>
         </div>

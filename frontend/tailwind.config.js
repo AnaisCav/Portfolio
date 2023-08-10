@@ -7,6 +7,7 @@ export default {
         "blue-bg": "#3381C6",
         "almost-white": "#FAFAFA",
         "dark-blue": "#0062B9",
+        "almost-black": "#242422",
       },
       fontFamily: {
         sans: ["Work Sans"],

@@ -6,7 +6,7 @@ const AboutMe = () => {
       <div className="text-center mx-6 md:mx-36 my-16 md:my-0 lg:mx-72 flex flex-col items-center">
         <h1 className="font-bold text-3xl lg:text-4xl">ABOUT ME</h1>
         <p className="bg-blue-bg h-1 rounded-lg my-6 w-10" />
-        <p className="text-gray-500">
+        <p className="text-gray-500 lg:text-xl">
           Vous trouverez ci-dessous plus d&apos;informations sur mon parcours,
           mes projets et mes compétences actuelles en termes de programmation.
         </p>
