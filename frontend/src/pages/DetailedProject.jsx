@@ -26,10 +26,6 @@ const DetailedProject = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  if (project.length > 0) {
-    console.log(project);
-  }
-
   return (
     <div>
       {project && (
@@ -72,6 +68,15 @@ const DetailedProject = () => {
                   Descriptif du projet
                 </h2>
                 <p className="text-gray-500">{project.longueDescription}</p>
+                <video
+                  src={project.video}
+                  controls
+                  className={
+                    project.id === 4 || project.id === 1
+                      ? "hidden"
+                      : "flex my-8"
+                  }
+                />
               </div>
               <div>
                 <h2 className="font-bold text-2xl md:text-3xl mb-6 mt-16">

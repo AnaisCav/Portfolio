@@ -1,4 +1,6 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
+
 import img from "../assets/profile-picture.png";
 
 const Navbar = () => {
@@ -14,7 +16,14 @@ const Navbar = () => {
             />
           </a>
         </label>
-        <Link to="/">
+        <Link
+          to="home"
+          spy={true}
+          smooth={true}
+          offset={-96}
+          duration={500}
+          className="cursor-pointer"
+        >
           <p className="text-lg md:text-md lg:text-xl font-bold ml-2 lg:ml-4">
             ANAÏS CAVAILLÉ
           </p>
@@ -42,36 +51,108 @@ const Navbar = () => {
             tabIndex={0}
             className="menu menu-sm dropdown-content mt-2 z-[1] text-gray-800 bg-white w-96 right-0"
           >
-            <li className="h-16 border-t-2 font-bold flex justify-center items-end pr-2 border-gray-200">
-              <Link to="/">ACCUEIL</Link>
+            <li className="h-16 border-t-2 font-bold flex justify-center items-end pr-2 border-gray-200 ">
+              <Link
+                to="home"
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={500}
+                className="cursor-pointer"
+              >
+                ACCUEIL
+              </Link>
             </li>
             <li className="h-16 border-t-2 font-bold flex justify-center items-end pr-2 border-gray-200">
-              <a>COMPÉTENCES</a>
+              <Link
+                to="aboutMe"
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={500}
+                className="cursor-pointer"
+              >
+                COMPÉTENCES
+              </Link>
             </li>
             <li className="h-16 border-t-2 font-bold flex justify-center items-end pr-2 border-gray-200">
-              <a>PROJETS</a>
+              <Link
+                to="projets"
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={500}
+                className="cursor-pointer"
+              >
+                PROJETS
+              </Link>
             </li>
             <li className="h-16 border-t-2 font-bold flex justify-center items-end pr-2 border-gray-200">
-              <a>CONTACT</a>
+              <Link
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={500}
+                className="cursor-pointer"
+              >
+                CONTACT
+              </Link>{" "}
             </li>
           </ul>
         </div>
         <div className="hidden md:flex">
           <ul className="flex md:gap-7 lg:gap-12 px-1 md:text-sm lg:text-lg font-bold md:mr-4 lg:mr-12">
-            <button className="hover:text-blue-bg">
-              <Link to="/">
-                <li>ACCUEIL</li>
+            <li className="hover:text-blue-bg">
+              <Link
+                to="home"
+                spy={true}
+                smooth={true}
+                offset={-96}
+                duration={500}
+                className="cursor-pointer"
+              >
+                ACCUEIL
               </Link>
-            </button>
-            <button className="hover:text-blue-bg">
-              <li>COMPÉTENCES</li>
-            </button>
-            <button className="hover:text-blue-bg">
-              <li>PROJETS</li>
-            </button>
-            <button className="hover:text-blue-bg">
-              <li>CONTACT</li>
-            </button>
+            </li>
+            <li className="hover:text-blue-bg">
+              <Link
+                to="aboutMe"
+                spy={true}
+                smooth={true}
+                offset={-96}
+                duration={500}
+                className="cursor-pointer"
+              >
+                COMPÉTENCES
+              </Link>
+            </li>
+            <li className="hover:text-blue-bg">
+              {" "}
+              <Link
+                to="projets"
+                spy={true}
+                smooth={true}
+                offset={-96}
+                duration={500}
+                className="cursor-pointer"
+              >
+                PROJETS
+              </Link>
+            </li>
+            <li className="hover:text-blue-bg">
+              {" "}
+              <Link
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={-96}
+                duration={500}
+                className="cursor-pointer"
+              >
+                CONTACT
+              </Link>
+            </li>
           </ul>
         </div>
       </div>

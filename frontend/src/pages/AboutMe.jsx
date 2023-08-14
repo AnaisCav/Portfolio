@@ -2,7 +2,10 @@ import Skills from "../components/Skills";
 
 const AboutMe = () => {
   return (
-    <div className="bg-almost-white h-full md:h-screen text-black flex flex-col items-center justify-between md:justify-around">
+    <div
+      id="aboutMe"
+      className="bg-almost-white h-full md:h-screen text-black flex flex-col items-center justify-between md:justify-around"
+    >
       <div className="text-center mx-6 md:mx-36 my-16 md:my-0 lg:mx-72 flex flex-col items-center">
         <h1 className="font-bold text-3xl lg:text-4xl">ABOUT ME</h1>
         <p className="bg-blue-bg h-1 rounded-lg my-6 w-10" />
