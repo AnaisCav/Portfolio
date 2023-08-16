@@ -1,11 +1,12 @@
 // import { Link } from "react-router-dom";
-import { Link } from "react-scroll";
+import { Link as ScrollTo } from "react-scroll";
+import { Link } from "react-router-dom";
 
 import img from "../assets/profile-picture.png";
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between items-center h-20 lg:h-24 md:pr-4 bg-white text-gray-800">
+    <div className=" flex justify-between items-center h-20 lg:h-24 md:pr-4 bg-white text-gray-800">
       <div className="flex justify-around lg:justify-evenly ml-4 md:ml-6 lg:ml-12 items-center">
         <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
           <a href={img} target="_blank" rel="noreferrer">
@@ -16,7 +17,7 @@ const Navbar = () => {
             />
           </a>
         </label>
-        <Link
+        <ScrollTo
           to="home"
           spy={true}
           smooth={true}
@@ -24,10 +25,12 @@ const Navbar = () => {
           duration={500}
           className="cursor-pointer"
         >
-          <p className="text-lg md:text-md lg:text-xl font-bold ml-2 lg:ml-4">
-            ANAÏS CAVAILLÉ
-          </p>
-        </Link>
+          <Link to="/">
+            <p className="text-lg md:text-md lg:text-xl font-bold ml-2 lg:ml-4">
+              ANAÏS CAVAILLÉ
+            </p>
+          </Link>
+        </ScrollTo>
       </div>
       <div>
         <div className="dropdown md:hidden">
@@ -52,7 +55,7 @@ const Navbar = () => {
             className="menu menu-sm dropdown-content mt-2 z-[1] text-gray-800 bg-white w-96 right-0"
           >
             <li className="h-16 border-t-2 font-bold flex justify-center items-end pr-2 border-gray-200 ">
-              <Link
+              <ScrollTo
                 to="home"
                 spy={true}
                 smooth={true}
@@ -60,11 +63,11 @@ const Navbar = () => {
                 duration={500}
                 className="cursor-pointer"
               >
-                ACCUEIL
-              </Link>
+                <Link to="/">ACCUEIL</Link>
+              </ScrollTo>
             </li>
             <li className="h-16 border-t-2 font-bold flex justify-center items-end pr-2 border-gray-200">
-              <Link
+              <ScrollTo
                 to="aboutMe"
                 spy={true}
                 smooth={true}
@@ -72,11 +75,11 @@ const Navbar = () => {
                 duration={500}
                 className="cursor-pointer"
               >
-                COMPÉTENCES
-              </Link>
+                <Link to="/">COMPÉTENCES</Link>
+              </ScrollTo>
             </li>
             <li className="h-16 border-t-2 font-bold flex justify-center items-end pr-2 border-gray-200">
-              <Link
+              <ScrollTo
                 to="projets"
                 spy={true}
                 smooth={true}
@@ -84,11 +87,11 @@ const Navbar = () => {
                 duration={500}
                 className="cursor-pointer"
               >
-                PROJETS
-              </Link>
+                <Link to="/">PROJETS</Link>
+              </ScrollTo>
             </li>
             <li className="h-16 border-t-2 font-bold flex justify-center items-end pr-2 border-gray-200">
-              <Link
+              <ScrollTo
                 to="contact"
                 spy={true}
                 smooth={true}
@@ -96,15 +99,15 @@ const Navbar = () => {
                 duration={500}
                 className="cursor-pointer"
               >
-                CONTACT
-              </Link>{" "}
+                <Link to="/">CONTACT</Link>
+              </ScrollTo>{" "}
             </li>
           </ul>
         </div>
         <div className="hidden md:flex">
           <ul className="flex md:gap-7 lg:gap-12 px-1 md:text-sm lg:text-lg font-bold md:mr-4 lg:mr-12">
             <li className="hover:text-blue-bg">
-              <Link
+              <ScrollTo
                 to="home"
                 spy={true}
                 smooth={true}
@@ -112,11 +115,11 @@ const Navbar = () => {
                 duration={500}
                 className="cursor-pointer"
               >
-                ACCUEIL
-              </Link>
+                <Link to="/">ACCUEIL</Link>
+              </ScrollTo>
             </li>
             <li className="hover:text-blue-bg">
-              <Link
+              <ScrollTo
                 to="aboutMe"
                 spy={true}
                 smooth={true}
@@ -124,12 +127,12 @@ const Navbar = () => {
                 duration={500}
                 className="cursor-pointer"
               >
-                COMPÉTENCES
-              </Link>
+                <Link to="/">COMPÉTENCES</Link>
+              </ScrollTo>
             </li>
             <li className="hover:text-blue-bg">
               {" "}
-              <Link
+              <ScrollTo
                 to="projets"
                 spy={true}
                 smooth={true}
@@ -137,12 +140,12 @@ const Navbar = () => {
                 duration={500}
                 className="cursor-pointer"
               >
-                PROJETS
-              </Link>
+                <Link to="/">PROJETS</Link>
+              </ScrollTo>
             </li>
             <li className="hover:text-blue-bg">
               {" "}
-              <Link
+              <ScrollTo
                 to="contact"
                 spy={true}
                 smooth={true}
@@ -150,8 +153,8 @@ const Navbar = () => {
                 duration={500}
                 className="cursor-pointer"
               >
-                CONTACT
-              </Link>
+                <Link to="/">CONTACT</Link>
+              </ScrollTo>
             </li>
           </ul>
         </div>
