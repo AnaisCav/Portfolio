@@ -84,7 +84,7 @@ const DetailedProject = () => {
               {project.id === 4 ? (
                 <div className="flex justify-center md:justify-normal">
                   <Link to="/">
-                    <button className="mt-16 text-dark-blue border-dark-blue border-2 my-4 w-56 h-12 md:h-14 md:text-xl rounded-md shadow-lg --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300">
+                    <button className="mt-16 text-blue-button border-blue-button border-2 my-4 w-56 h-12 md:h-14 md:text-xl rounded-md shadow-lg --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300">
                       Retour accueil
                     </button>
                   </Link>
@@ -100,12 +100,12 @@ const DetailedProject = () => {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <button className="bg-dark-blue text-almost-white my-4 w-56 h-12 md:h-14 md:text-xl rounded-md shadow-lg --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300">
+                      <button className="bg-blue-button text-almost-white my-4 w-56 h-12 md:h-14 md:text-xl rounded-md shadow-lg --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300">
                         Repo Github
                       </button>
                     </a>
                     <Link to="/">
-                      <button className="text-dark-blue border-dark-blue border-2 my-4 w-56 h-12 md:h-14 md:text-xl rounded-md shadow-lg --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300">
+                      <button className="text-blue-button border-blue-button border-2 my-4 w-56 h-12 md:h-14 md:text-xl rounded-md shadow-lg --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300">
                         Retour accueil
                       </button>
                     </Link>

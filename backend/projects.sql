@@ -45,7 +45,7 @@ INSERT INTO
         'Premier hackathon de notre formation. Nous avions moins de deux jours pour créer un site fullstack',
         'Le thème du hackathon était "Créer un site qui aurait pu être utile jadis". Le site devait être fullstack. Nous avons donc eu l''idée de créer un site de location de véhicule à l''époque du moyen age. Le site permet donc à l''utilisateur de choisi son adresse de départ et d''arrivée. Lorsque ces adresses sont renseignées, l''utilisateur arrive sur la page des véhicules. Il peut filtrer ses véhicules en fonction de son status social, du type de moteur (humain ou animal), etc. Dès que l''utilisateur a fait son choix, il pourra accéder à la page de finalisation de sa commande. Il aura la possibilité de choisir des services de dernières minutes, comme par exemple une cruche de vin ou un cochet, mais évidement cela augmentera le prix de la course. Enfin, dès que l''utilisateur aura terminé ces choix d''options, il n''a plus qu''à cliquer sur le bouton pour finaliser sa commande et un compte à rebours apparaitra pour indiquer à l''utilisateur le temps qu''il lui reste avant que son véhicule arrivera.',
         'React, Tailwind, Javascript',
-        'https://github.com/Achapeau/SleepyDevSquad',
+        'https://github.com/AnaisCav/TuumVehiculum',
         '../src/assets/videos/TuumVehiculum.mp4'
     ), (
         'Eating Nam Nam',

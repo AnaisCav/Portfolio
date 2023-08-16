@@ -44,7 +44,7 @@ const Contact = () => {
           <div className="flex flex-col">
             <label
               htmlFor="name"
-              className="text-gray-600 font-bold lg:text-xl mb-4"
+              className="text-almost-black font-bold lg:text-xl mb-4"
             >
               Prénom
             </label>
@@ -52,7 +52,7 @@ const Contact = () => {
               required
               placeholder="Saisissez votre prénom"
               type="text"
-              className="bg-gray-200 h-14 lg:h-20 rounded-lg pl-4 text-sm lg:text-lg"
+              className="bg-gray-200 h-14 lg:h-20 rounded-lg pl-4 text-sm lg:text-lg text-almost-black focus:ring-blue-bg focus:outline-none focus:ring-2"
               name="firstname"
               id="firstname"
             />
@@ -60,7 +60,7 @@ const Contact = () => {
           <div className="flex flex-col">
             <label
               htmlFor="name"
-              className="text-gray-600 font-bold lg:text-xl mb-4 mt-6"
+              className="text-almost-black font-bold lg:text-xl mb-4 mt-6"
             >
               Nom
             </label>
@@ -68,7 +68,7 @@ const Contact = () => {
               required
               placeholder="Saisissez votre nom"
               type="text"
-              className="bg-gray-200 h-14 lg:h-20 rounded-lg pl-4 text-sm lg:text-lg"
+              className="bg-gray-200 h-14 lg:h-20 rounded-lg pl-4 text-sm lg:text-lg text-almost-black focus:ring-blue-bg focus:outline-none focus:ring-2"
               name="lastname"
               id="lastname"
             />
@@ -76,7 +76,7 @@ const Contact = () => {
           <div className="flex flex-col">
             <label
               htmlFor="email"
-              className="text-gray-600 font-bold lg:text-xl mb-4 mt-6"
+              className="text-almost-black font-bold lg:text-xl mb-4 mt-6"
             >
               Email
             </label>
@@ -84,7 +84,7 @@ const Contact = () => {
               required
               placeholder="Saisissez votre votre adresse email"
               type="email"
-              className="bg-gray-200 h-14 lg:h-20 rounded-lg pl-4 text-sm lg:text-lg"
+              className="bg-gray-200 h-14 lg:h-20 rounded-lg pl-4 text-sm lg:text-lg text-almost-black focus:ring-blue-bg focus:outline-none focus:ring-2"
               name="email"
               id="email"
             />
@@ -92,7 +92,7 @@ const Contact = () => {
           <div className="flex flex-col">
             <label
               htmlFor="message"
-              className="text-gray-600 font-bold lg:text-xl mb-4 mt-6"
+              className="text-almost-black font-bold lg:text-xl mb-4 mt-6"
             >
               Message
             </label>
@@ -100,7 +100,7 @@ const Contact = () => {
               required
               cols="30"
               rows="10"
-              className="bg-gray-200 rounded-lg pt-6 pl-4 text-sm lg:text-lg"
+              className="bg-gray-200 rounded-lg pt-6 pl-4 text-sm lg:text-lg text-almost-black focus:ring-blue-bg focus:outline-none focus:ring-2"
               placeholder="Saisissez votre message"
               name="message"
               id="message"
@@ -109,7 +109,7 @@ const Contact = () => {
           <div className="flex md:justify-end mt-8">
             <button
               type="submit"
-              className=" bg-dark-blue text-white my-4 w-full md:w-44 h-12 md:h-14 md:text-xl rounded-md shadow-lg font-bold --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300"
+              className=" bg-blue-button text-almost-white my-4 w-full md:w-44 h-12 md:h-14 md:text-xl rounded-md shadow-lg font-bold --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300"
             >
               {status}
             </button>

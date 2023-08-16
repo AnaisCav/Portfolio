@@ -6,7 +6,7 @@ const AboutMe = () => {
   return (
     <div
       id="aboutMe"
-      className="bg-almost-white text-black flex flex-col items-center justify-between md:justify-around py-16"
+      className="bg-almost-white text-almost-black flex flex-col items-center justify-between md:justify-around py-16 drop-shadow-2xl"
     >
       <div className="text-center mx-6 md:mx-36 pb-16 lg:mx-72 flex flex-col items-center">
         <h1 className="font-bold text-3xl lg:text-4xl">ABOUT ME</h1>
@@ -27,11 +27,11 @@ const AboutMe = () => {
             à Toulouse. Actuellement en formation de{" "}
             <span className="font-bold">Développeur Web et Web mobile</span> à
             la <span className="font-bold">Wild Code School</span>, j&apos;ai pu
-            déjà mettre mes compétences à exécution en travaillant sur un projet
-            de groupe.
+            déjà mettre mes compétences à exécution en travaillant sur plusieurs
+            projets de groupe.
           </p>
           <p className="text-gray-500 mb-3">
-            Ayant travaillé quelques années dans le commerce internationnal,
+            Ayant travaillé quelques années dans le commerce international,
             j&apos;ai eu envie de me reconvertir vers un domaine qui me
             passionne depuis longtemps.
           </p>
@@ -47,7 +47,7 @@ const AboutMe = () => {
             duration={500}
             className="cursor-pointer"
           >
-            <button className="bg-dark-blue text-white my-4 w-28 md:w-56 h-12 md:h-14 md:text-xl rounded-md shadow-lg font-bold --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300">
+            <button className="bg-blue-button text-white my-4 w-28 md:w-56 h-12 md:h-14 md:text-xl rounded-md shadow-lg font-bold --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300">
               CONTACT
             </button>
           </ScrollTo>

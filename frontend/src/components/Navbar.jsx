@@ -6,7 +6,7 @@ import img from "../assets/profile-picture.png";
 
 const Navbar = () => {
   return (
-    <div className=" flex justify-between items-center h-20 lg:h-24 md:pr-4 bg-white text-gray-800">
+    <div className=" flex justify-between items-center h-20 lg:h-24 md:pr-4 bg-almost-white drop-shadow-lg text-gray-800">
       <div className="flex justify-around lg:justify-evenly ml-4 md:ml-6 lg:ml-12 items-center">
         <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
           <a href={img} target="_blank" rel="noreferrer">
