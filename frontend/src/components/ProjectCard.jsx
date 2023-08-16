@@ -11,7 +11,7 @@ const ProjectCard = ({ id, name, image, rapideDescription }) => {
           {rapideDescription}
         </p>
         <Link to={`/projet/${id}`}>
-          <button className="bg-dark-blue text-white my-4 w-28 md:w-44 h-12 md:h-14 md:text-xl rounded-md shadow-lg font-bold --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300">
+          <button className="bg-blue-button text-almost-white my-4 w-28 md:w-44 h-12 md:h-14 md:text-xl rounded-md shadow-lg font-bold --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300">
             VOIR
           </button>
         </Link>

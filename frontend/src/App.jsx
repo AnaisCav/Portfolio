@@ -7,7 +7,7 @@ import "./index.css";
 function App() {
   return (
     <div className="relative">
-      <div className="sticky top-0 w-full">
+      <div className="sticky top-0 w-full z-50">
         <Navbar />
       </div>
       <AppRoutes />
