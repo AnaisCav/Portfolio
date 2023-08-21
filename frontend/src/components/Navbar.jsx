@@ -8,14 +8,8 @@ const Navbar = () => {
   return (
     <div className=" flex justify-between items-center h-20 lg:h-24 md:pr-4 bg-almost-white drop-shadow-lg text-gray-800">
       <div className="flex justify-around lg:justify-evenly ml-4 md:ml-6 lg:ml-12 items-center">
-        <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-          <a href={img} target="_blank" rel="noreferrer">
-            <img
-              src={img}
-              alt="Photo de Anaïs Cavaillé"
-              className=" border-gray-600 border-2 btn btn-ghost btn-circle avata"
-            />
-          </a>
+        <label tabIndex={0} className="btn btn-circle cursor-default avatar">
+          <img src={img} alt="Photo de Anaïs Cavaillé" />
         </label>
         <ScrollTo
           to="home"
@@ -111,7 +105,7 @@ const Navbar = () => {
                 to="home"
                 spy={true}
                 smooth={true}
-                offset={-96}
+                offset={-100}
                 duration={500}
                 className="cursor-pointer"
               >
@@ -123,7 +117,7 @@ const Navbar = () => {
                 to="aboutMe"
                 spy={true}
                 smooth={true}
-                offset={-96}
+                offset={-80}
                 duration={500}
                 className="cursor-pointer"
               >
@@ -136,7 +130,7 @@ const Navbar = () => {
                 to="projets"
                 spy={true}
                 smooth={true}
-                offset={-96}
+                offset={-80}
                 duration={500}
                 className="cursor-pointer"
               >
@@ -149,7 +143,7 @@ const Navbar = () => {
                 to="contact"
                 spy={true}
                 smooth={true}
-                offset={-96}
+                offset={-80}
                 duration={500}
                 className="cursor-pointer"
               >

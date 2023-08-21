@@ -46,7 +46,7 @@ const Contact = () => {
               htmlFor="name"
               className="text-almost-black font-bold lg:text-xl mb-4"
             >
-              Prénom
+              Prénom *
             </label>
             <input
               required
@@ -62,7 +62,7 @@ const Contact = () => {
               htmlFor="name"
               className="text-almost-black font-bold lg:text-xl mb-4 mt-6"
             >
-              Nom
+              Nom *
             </label>
             <input
               required
@@ -78,7 +78,7 @@ const Contact = () => {
               htmlFor="email"
               className="text-almost-black font-bold lg:text-xl mb-4 mt-6"
             >
-              Email
+              Email *
             </label>
             <input
               required
@@ -91,10 +91,27 @@ const Contact = () => {
           </div>
           <div className="flex flex-col">
             <label
+              htmlFor="phone"
+              className="text-almost-black font-bold lg:text-xl mb-4 mt-6"
+            >
+              Numéro de téléphone
+            </label>
+            <input
+              placeholder="Saisissez votre votre numéro de téléphone"
+              type="tel"
+              pattern="[0-9]{10}"
+              className="bg-gray-200 h-14 lg:h-20 rounded-lg pl-4 text-sm lg:text-lg text-almost-black focus:ring-blue-bg focus:outline-none focus:ring-2"
+              name="phone"
+              id="phone"
+            />
+            <small>Format: 0607080910</small>
+          </div>
+          <div className="flex flex-col">
+            <label
               htmlFor="message"
               className="text-almost-black font-bold lg:text-xl mb-4 mt-6"
             >
-              Message
+              Message *
             </label>
             <textarea
               required

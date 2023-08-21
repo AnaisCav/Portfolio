@@ -12,7 +12,7 @@ const Skills = () => {
     "Styled Components",
     "Express",
     "MySQL",
-    "Méthode Agile"
+    "Méthodologie Agile",
   ];
   return (
     <div className="flex gap-4 flex-wrap">

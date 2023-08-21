@@ -34,8 +34,8 @@ const DetailedProject = () => {
     <div>
       {project && (
         <>
-          <div className="min-h-[30rem] md:min-h-[24rem] lg:min-h-[28rem] bg-blue-bg text-almost-white flex flex-col justify-center items-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold">
+          <div className="min-h-[30rem] md:min-h-[24rem] lg:min-h-[28rem] bg-blue-bg text-almost-white flex flex-col justify-center items-center ">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold ">
               {project.name}
             </h1>
             <p className="md:text-ld lg:text-xl my-8 lg:my-12 px-4 md:px-20 lg:px-56 text-center">
@@ -53,7 +53,7 @@ const DetailedProject = () => {
               </button>
             </a>
           </div>
-          <div className="flex flex-col justify-center items-center bg-almost-white text-almost-black pb-16">
+          <div className="flex flex-col justify-center items-center bg-almost-white text-almost-black pb-16 drop-shadow-xl">
             <img
               src={project.image}
               alt={`Image du projet ${project.name}`}
@@ -82,7 +82,7 @@ const DetailedProject = () => {
                 <p className="text-gray-500">{project.langages}</p>
               </div>
               {project.id === 4 ? (
-                <div className="flex justify-center md:justify-normal">
+                <div className="flex justify-center md:justify-normal ">
                   <Link to="/">
                     <button className="mt-16 text-blue-button border-blue-button border-2 my-4 w-56 h-12 md:h-14 md:text-xl rounded-md shadow-lg --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300">
                       Retour accueil
