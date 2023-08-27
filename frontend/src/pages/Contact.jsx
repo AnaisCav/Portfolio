@@ -1,33 +1,12 @@
-import { useState } from "react";
+import { useForm, ValidationError } from "@formspree/react";
+import MessageSentModal from "../components/MessageSentModal";
 
 const Contact = () => {
-  const [status, setStatus] = useState("Envoyer");
+  const [state, handleSubmit] = useForm(`${import.meta.env.VITE_FORM_ID}`);
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setStatus("Envoie en cours...");
-
-    const { firstname, lastname, email, message } = e.target.elements;
-
-    let details = {
-      firstname: firstname.value,
-      lastname: lastname.value,
-      email: email.value,
-      message: message.value,
-    };
-
-    let response = await fetch("http://localhost:8000/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
-      },
-      body: JSON.stringify(details),
-    });
-    setStatus("Envoyer");
-
-    let result = await response.json();
-    alert(result.status);
-  };
+  if (state.succeeded) {
+    window.messageSent.showModal();
+  }
 
   return (
     <div id="contact" className="bg-blue-bg pb-20 lg:pb-32">
@@ -39,14 +18,14 @@ const Contact = () => {
           répondre dès que possible.
         </p>
       </div>
-      <div className=" bg-almost-white mx-6 lg:mx-28 rounded-lg p-6 lg:p-12">
-        <form onSubmit={handleSubmit}>
+      <div className="bg-almost-white mx-6 lg:mx-28 rounded-lg p-6 lg:p-12">
+        <form method="POST" onSubmit={handleSubmit} className=" block">
           <div className="flex flex-col">
             <label
               htmlFor="name"
               className="text-almost-black font-bold lg:text-xl mb-4"
             >
-              Prénom *
+              Prénom
             </label>
             <input
               required
@@ -56,13 +35,18 @@ const Contact = () => {
               name="firstname"
               id="firstname"
             />
+            <ValidationError
+              prefix="Firstname"
+              field="firstname"
+              errors={state.errors}
+            />
           </div>
           <div className="flex flex-col">
             <label
               htmlFor="name"
               className="text-almost-black font-bold lg:text-xl mb-4 mt-6"
             >
-              Nom *
+              Nom
             </label>
             <input
               required
@@ -72,13 +56,18 @@ const Contact = () => {
               name="lastname"
               id="lastname"
             />
+            <ValidationError
+              prefix="Lastname"
+              field="lastname"
+              errors={state.errors}
+            />
           </div>
           <div className="flex flex-col">
             <label
               htmlFor="email"
               className="text-almost-black font-bold lg:text-xl mb-4 mt-6"
             >
-              Email *
+              Email
             </label>
             <input
               required
@@ -87,6 +76,11 @@ const Contact = () => {
               className="bg-gray-200 h-14 lg:h-20 rounded-lg pl-4 text-sm lg:text-lg text-almost-black focus:ring-blue-bg focus:outline-none focus:ring-2"
               name="email"
               id="email"
+            />
+            <ValidationError
+              prefix="Email"
+              field="email"
+              errors={state.errors}
             />
           </div>
           <div className="flex flex-col">
@@ -97,6 +91,7 @@ const Contact = () => {
               Numéro de téléphone
             </label>
             <input
+              required
               placeholder="Saisissez votre votre numéro de téléphone"
               type="tel"
               pattern="[0-9]{10}"
@@ -105,13 +100,18 @@ const Contact = () => {
               id="phone"
             />
             <small>Format: 0607080910</small>
+            <ValidationError
+              prefix="Phone number"
+              field="phone"
+              errors={state.errors}
+            />
           </div>
           <div className="flex flex-col">
             <label
               htmlFor="message"
               className="text-almost-black font-bold lg:text-xl mb-4 mt-6"
             >
-              Message *
+              Message
             </label>
             <textarea
               required
@@ -122,17 +122,25 @@ const Contact = () => {
               name="message"
               id="message"
             ></textarea>
+            <ValidationError
+              prefix="Message"
+              field="message"
+              errors={state.errors}
+            />
           </div>
           <div className="flex md:justify-end mt-8">
             <button
               type="submit"
+              disabled={state.submitting}
               className=" bg-blue-button text-almost-white my-4 w-full md:w-44 h-12 md:h-14 md:text-xl rounded-md shadow-lg font-bold --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300"
             >
-              {status}
+              Envoyer
             </button>
+            <ValidationError errors={state.errors} />
           </div>
         </form>
       </div>
+      <MessageSentModal />
     </div>
   );
 };
