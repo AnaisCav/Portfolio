@@ -1,7 +1,13 @@
+import PhoneNumberModal from "./PhoneNumberModal";
+
 import linkedin from "../assets/linkedin-logo.png";
 import github from "../assets/github-logo.png";
+import contact from "../assets/contact.png";
 
 const Footer = () => {
+  const printPhoneNumber = () => {
+    window.phoneNumber.showModal();
+  };
   return (
     <footer className="bg-almost-white py-6 md:py-0 lg:py-6 md:pt-6 px-4 md:px-8 text-almost-black ">
       <div className="flex flex-col md:flex-row md:justify-between">
@@ -11,7 +17,7 @@ const Footer = () => {
         </div>
         <div>
           <h1 className="lg:text-2xl mb-3 font-bold">RESEAUX SOCIAUX</h1>
-          <div className="flex gap-5">
+          <div className="flex gap-5 justify-center">
             <a
               href="https://www.linkedin.com/in/anaiscavaille/"
               target="_blank"
@@ -26,9 +32,17 @@ const Footer = () => {
             >
               <img src={github} alt="Logo GitHub" className="w-6 lg:w-10" />
             </a>
+            <button type="button" onClick={printPhoneNumber}>
+              <img
+                src={contact}
+                alt="Logo smartphone"
+                className="w-6 lg:w-10"
+              />
+            </button>
           </div>
         </div>
       </div>
+      <PhoneNumberModal />
     </footer>
   );
 };

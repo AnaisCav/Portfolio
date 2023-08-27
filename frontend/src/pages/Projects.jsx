@@ -8,7 +8,7 @@ const Projets = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8000/projects`)
+      .get(`${import.meta.env.VITE_BACKEND_URL}/projects`)
       .then((response) => {
         setProjectData(response.data);
       })
@@ -19,7 +19,7 @@ const Projets = () => {
   return (
     <div
       id="projets"
-      className="bg-almost-white text-almost-black flex flex-col items-center justify-between md:justify-around md:pt-20 md:px-6 lg:px-0"
+      className="bg-almost-white text-almost-black flex flex-col items-center justify-between md:justify-around md:pt-20 md:px-6 lg:px-0 drop-shadow-xl"
     >
       <div className="text-center mx-6 md:mx-36 my-16 md:my-0 lg:mx-72 flex flex-col items-center">
         <h1 className="font-bold text-3xl lg:text-4xl">PROJETS</h1>
