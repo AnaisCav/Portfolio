@@ -41,6 +41,10 @@ app.get("/projects", async (req, res) => {
   }
 });
 
+app.get("/hello", async (req, res) => {
+  res.send("world");
+});
+
 app.listen(port, (err) => {
   if (err) {
     console.error("Something bad happened");

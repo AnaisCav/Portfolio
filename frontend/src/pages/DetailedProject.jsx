@@ -12,7 +12,7 @@ const DetailedProject = () => {
   useEffect(
     () => {
       axios
-        .get(`http://localhost:8000/projects`)
+        .get(`${import.meta.env.VITE_BACKEND_URL}/projects`)
         .then((response) => {
           const data = response.data;
           const projectData = data.find((item) => item.id === parseInt(id, 10));
