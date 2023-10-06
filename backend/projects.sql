@@ -48,7 +48,7 @@ INSERT INTO
         '/assets/hackathon1-mockup.png',
         'Premier hackathon de notre formation. Nous avions moins de deux jours pour créer un site fullstack',
         'Le thème du hackathon était "Créer un site qui aurait pu être utile jadis". Le site devait être fullstack. Nous avons donc eu l''idée de créer un site de location de véhicule à l''époque du moyen age. Le site permet donc à l''utilisateur de choisi son adresse de départ et d''arrivée. Lorsque ces adresses sont renseignées, l''utilisateur arrive sur la page des véhicules. Il peut filtrer ses véhicules en fonction de son status social, du type de moteur (humain ou animal), etc. Dès que l''utilisateur a fait son choix, il pourra accéder à la page de finalisation de sa commande. Il aura la possibilité de choisir des services de dernières minutes, comme par exemple une cruche de vin ou un cochet, mais évidement cela augmentera le prix de la course. Enfin, dès que l''utilisateur aura terminé ces choix d''options, il n''a plus qu''à cliquer sur le bouton pour finaliser sa commande et un compte à rebours apparaitra pour indiquer à l''utilisateur le temps qu''il lui reste avant que son véhicule arrivera.',
-        'React, Tailwind, Javascript',
+        'React, Tailwind, NodeJs, Javascript',
         'https://github.com/AnaisCav/TuumVehiculum',
         '/videos/TuumVehiculum.mp4',
         'https://tuum-vehiculum.achap.fr/'
@@ -56,9 +56,18 @@ INSERT INTO
         'Eating Nam Nam',
         '/assets/project3-mockup.png',
         'Eating Nam Nam est une plateforme culinaire avec la possibilité de créer un compte pour permettre à l''utilisateur de personaliser ses préférences.',
-        'Projet actuellement en cours de production',
+        'Eating Nam Nam est un site que nous avons réaliser à 5. C''est un site qui va inciter l''utilisateur à se connecter car il n''aura pas accès à l''intégralité du site. Une fois connecté, il peut consulter la recette populaire, les dernières recettes créées ou rechercher une recette de cuisine grâce à des filtres. Chaque utilisateur pourra mettre un commentaire et noter des recettes. L''utilisateur va également pouvoir créer sa propre recette en renseignant les informations necessaires. Il peut également accéder à son profil, modifier ses informations et son mot de passe. Sur sa page profil, il pourra aussi accéder aux recettes qu''il a créé ainsi qu''aux pages des autres utilisateurs du site. Enfin, nous avons également implémenté des utilisateurs qui sont admins et qui peuvent gérer les recettes, les ingrédients, les utilisateurs et les commentaires.',
+        'React, Tailwind, NodeJs, Javascript, Express, MySQL',
+        'https://github.com/AnaisCav/Eating-NamNam',
+        '',
+        'https://eating-nam-nam.c-sia.com/'
+    ), (
+        'Box of Magic',
+        '/assets/project4-mockup.png',
+        'Premier projet seule. Ce site a été réalisé lors de notre évaluation de fin de formation. J''ai eu 48h pour créer un site fullstack.',
+        'Pour ce projet, j''ai eu envie de créer un faux site e-commerce sur le thème de l''univers de Harry Potter. L''utilisateur peut filtrer les articles, les trier par catégorie ou par maisons. Il peut ensuite voir les commentaires sur chaque article, mettre un commentaire et le modifier ou le supprimer après sa publication. Et bien évidement, l''utilisateur peut choisir la quantité d''article qu''il souhaite acheter et le mettre dans son panier. Une fois sur la page panier, il pourra valider sa commande.',
         'React, Tailwind, Javascript, Express, MySQL',
+        'https://github.com/AnaisCav/BoxOfMagic',
         '',
-        '',
-        ''
+        'https://box-of-magic.cavanais.fr/'
     );
