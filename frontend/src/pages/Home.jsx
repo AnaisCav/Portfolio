@@ -7,7 +7,7 @@ import Projets from "./Projects";
 const Home = () => {
   return (
     <div id="home">
-      <div className="bg-blue-bg py-16 min-h-screen md:min-h-full flex flex-col items-center justify-center">
+      <div className="bg-blue-bg py-16 min-h-screen md:min-h-full flex flex-col items-center justify-center min-[1800px]:px-56">
         <div className="text-almost-white  mx-4 md:mx-6 lg:mx-28 flex flex-col items-center justify-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center md:my-8 leading-relaxed md:leading-relaxed lg:leading-relaxed">
             BONJOUR, JE M&apos;APPELLE ANAÏS CAVAILLÉ
