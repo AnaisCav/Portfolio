@@ -46,9 +46,7 @@ const DetailedProject = () => {
               href={project.lienSite}
               target="_blank"
               rel="noreferrer"
-              className={
-                project.id === 4 || project.id === 2 ? "hidden" : "flex"
-              }
+              className={project.id === 2 ? "hidden" : "flex"}
             >
               <button className="bg-almost-white text-almost-black my-4 w-28 md:w-44 h-12 md:h-14 md:text-xl rounded-md shadow-lg font-bold --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300">
                 Voir
@@ -81,37 +79,24 @@ const DetailedProject = () => {
                 </h2>
                 <p className="text-gray-500">{project.langages}</p>
               </div>
-              {project.id === 4 ? (
-                <div className="flex justify-center md:justify-normal ">
+
+              <div>
+                <h2 className="font-bold text-2xl md:text-3xl mb-6 mt-16">
+                  Regardez par vous-même !
+                </h2>
+                <div className="flex flex-col items-center md:flex-row md:gap-7">
+                  <a href={project.lienGithub} target="_blank" rel="noreferrer">
+                    <button className="bg-blue-button text-almost-white my-4 w-56 h-12 md:h-14 md:text-xl rounded-md shadow-lg --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300">
+                      Repo Github
+                    </button>
+                  </a>
                   <Link to="/">
-                    <button className="mt-16 text-blue-button border-blue-button border-2 my-4 w-56 h-12 md:h-14 md:text-xl rounded-md shadow-lg --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300">
+                    <button className="text-blue-button border-blue-button border-2 my-4 w-56 h-12 md:h-14 md:text-xl rounded-md shadow-lg --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300">
                       Retour accueil
                     </button>
                   </Link>
                 </div>
-              ) : (
-                <div>
-                  <h2 className="font-bold text-2xl md:text-3xl mb-6 mt-16">
-                    Regardez par vous-même !
-                  </h2>
-                  <div className="flex flex-col items-center md:flex-row md:gap-7">
-                    <a
-                      href={project.lienGithub}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <button className="bg-blue-button text-almost-white my-4 w-56 h-12 md:h-14 md:text-xl rounded-md shadow-lg --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300">
-                        Repo Github
-                      </button>
-                    </a>
-                    <Link to="/">
-                      <button className="text-blue-button border-blue-button border-2 my-4 w-56 h-12 md:h-14 md:text-xl rounded-md shadow-lg --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300">
-                        Retour accueil
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              )}
+              </div>
             </div>
           </div>
         </>
