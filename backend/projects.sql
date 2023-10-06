@@ -54,7 +54,7 @@ INSERT INTO
         'https://tuum-vehiculum.achap.fr/'
     ), (
         'Eating Nam Nam',
-        '/assets/project3-mockup.png',
+        '/assets/project3.png',
         'Eating Nam Nam est une plateforme culinaire avec la possibilité de créer un compte pour permettre à l''utilisateur de personaliser ses préférences.',
         'Eating Nam Nam est un site que nous avons réaliser à 5. C''est un site qui va inciter l''utilisateur à se connecter car il n''aura pas accès à l''intégralité du site. Une fois connecté, il peut consulter la recette populaire, les dernières recettes créées ou rechercher une recette de cuisine grâce à des filtres. Chaque utilisateur pourra mettre un commentaire et noter des recettes. L''utilisateur va également pouvoir créer sa propre recette en renseignant les informations necessaires. Il peut également accéder à son profil, modifier ses informations et son mot de passe. Sur sa page profil, il pourra aussi accéder aux recettes qu''il a créé ainsi qu''aux pages des autres utilisateurs du site. Enfin, nous avons également implémenté des utilisateurs qui sont admins et qui peuvent gérer les recettes, les ingrédients, les utilisateurs et les commentaires.',
         'React, Tailwind, NodeJs, Javascript, Express, MySQL',
