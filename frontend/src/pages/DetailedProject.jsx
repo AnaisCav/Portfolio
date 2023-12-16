@@ -46,7 +46,9 @@ const DetailedProject = () => {
               href={project.lienSite}
               target="_blank"
               rel="noreferrer"
-              className={project.id === 2 ? "hidden" : "flex"}
+              className={
+                project.id === 2 || project.id === 5 ? "hidden" : "flex"
+              }
             >
               <button className="bg-almost-white text-almost-black my-4 w-28 md:w-44 h-12 md:h-14 md:text-xl rounded-md shadow-lg font-bold --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300">
                 Voir
@@ -69,7 +71,9 @@ const DetailedProject = () => {
                   src={project.video}
                   controls
                   className={
-                    project.id === 2 ? "flex my-8 rounded-3xl w-full" : "hidden"
+                    project.id === 2 || project.id === 5
+                      ? "flex my-8 rounded-3xl w-full"
+                      : "hidden"
                   }
                 />
               </div>

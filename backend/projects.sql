@@ -68,6 +68,6 @@ INSERT INTO
         'Pour ce projet, j''ai eu envie de créer un faux site e-commerce sur le thème de l''univers de Harry Potter. L''utilisateur peut filtrer les articles, les trier par catégorie ou par maisons. Il peut ensuite voir les commentaires sur chaque article, mettre un commentaire et le modifier ou le supprimer après sa publication. Et bien évidement, l''utilisateur peut choisir la quantité d''article qu''il souhaite acheter et le mettre dans son panier. Une fois sur la page panier, il pourra valider sa commande.',
         'React, Tailwind, Javascript, Express, MySQL',
         'https://github.com/AnaisCav/BoxOfMagic',
-        '',
-        'https://box-of-magic.cavanais.fr/'
+        '/assets/videos/BoxOfMagic.mp4',
+        ''
     );
