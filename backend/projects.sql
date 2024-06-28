@@ -52,15 +52,6 @@ INSERT INTO
         '/videos/TuumVehiculum.mp4',
         'https://tuum-vehiculum.achap.fr/'
     ), (
-        'Eating Nam Nam',
-        '/assets/project3.png',
-        'Eating Nam Nam est une plateforme culinaire avec la possibilité de créer un compte pour permettre à l''utilisateur de personnaliser ses préférences.',
-        'Eating Nam Nam est un site que nous avons réalisé à 5. C''est un site qui va inciter l''utilisateur à se connecter car il n''aura pas accès à l''intégralité du site. Une fois connecté, il peut consulter la recette populaire, les dernières recettes créées ou rechercher une recette de cuisine grâce à des filtres. Chaque utilisateur pourra mettre un commentaire et noter des recettes. L''utilisateur va également pouvoir créer sa propre recette en renseignant les informations nécessaires. Il peut également accéder à son profil, modifier ses informations et son mot de passe. Sur sa page profil, il pourra aussi accéder aux recettes qu''il a créées ainsi qu''aux pages des autres utilisateurs du site. Enfin, nous avons également implémenté des utilisateurs qui sont admins et qui peuvent gérer les recettes, les ingrédients, les utilisateurs et les commentaires.',
-        'React, Tailwind, NodeJs, Javascript, Express, MySQL',
-        'https://github.com/AnaisCav/Eating-NamNam',
-        '',
-        'https://eating-nam-nam.c-sia.com/'
-    ), (
         'Box of Magic',
         '/assets/project4-mockup.png',
         'Premier projet seule. Ce site a été réalisé lors de notre évaluation de fin de formation. J''ai eu 48h pour créer un site fullstack.',
@@ -70,6 +61,15 @@ INSERT INTO
         '/assets/videos/BoxOfMagic.mp4',
         ''
     ), (
+        'Eating Nam Nam',
+        '/assets/project3.png',
+        'Eating Nam Nam est une plateforme culinaire avec la possibilité de créer un compte pour permettre à l''utilisateur de personnaliser ses préférences.',
+        'Eating Nam Nam est un site que nous avons réalisé à 5. C''est un site qui va inciter l''utilisateur à se connecter car il n''aura pas accès à l''intégralité du site. Une fois connecté, il peut consulter la recette populaire, les dernières recettes créées ou rechercher une recette de cuisine grâce à des filtres. Chaque utilisateur pourra mettre un commentaire et noter des recettes. L''utilisateur va également pouvoir créer sa propre recette en renseignant les informations nécessaires. Il peut également accéder à son profil, modifier ses informations et son mot de passe. Sur sa page profil, il pourra aussi accéder aux recettes qu''il a créées ainsi qu''aux pages des autres utilisateurs du site. Enfin, nous avons également implémenté des utilisateurs qui sont admins et qui peuvent gérer les recettes, les ingrédients, les utilisateurs et les commentaires.',
+        'React, Tailwind, NodeJs, Javascript, Express, MySQL',
+        'https://github.com/AnaisCav/Eating-NamNam',
+        '',
+        'https://eating-nam-nam.c-sia.com/'
+    ), (
         'MonitoHR',
         '/assets/monitohr-mockup.png',
         'MonitoHR est un site d''aide à la gestion des offres d''emploi. Il permet aux RH de faire du monitoring sur leurs offres d''emplois, de comprendre où ils se placent par rapport aux concurrents, et bien d''autres fonctionnalités.',
@@ -78,4 +78,13 @@ INSERT INTO
         '',
         '',
         'https://www.monitohr.com/'
+    ), (
+        'GreenFoot',
+        '/assets/greenfoot-mockup.png',
+        'En cours de réalisation - GreenFoot est un site qui permet aux utilisateurs de connaitre leur empreinte carbone et de la réduire.',
+        'GreenFoot est un site réalisé à 5 pendant ma formation de Concepteur développeur d''application. L''utilisateur peut se connecter ou créer un compte pour accéder à la page d''accueil. Sur cette page, il peut voir son empreinte carbone annuelle, filtrer par type de dépenses ou par mois. Il peut également poster des "GreenTips" pour aider les autres utilisateurs à réduire leur empreinte carbone. Il peut également voir les "GreenTips" des autres utilisateurs et les liker. Il pourra également enregistrer des véhicules personnels afin de faciliter le calcul de son empreinte carbone. Enfin, il pourra également voir les statistiques de son empreinte carbone par rapport à la moyenne des autres utilisateurs. Du côté Admin, il pourra gérer les utilisateurs, les "GreenTips", les véhicules et les types de dépenses carbone.',
+        'Next.js, Tailwind, Typescript, NodeJs, Docker, GraphQL, PostgreSQL, Cypress',
+        '',
+        '',
+        ''
     );

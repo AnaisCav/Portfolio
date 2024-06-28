@@ -13,7 +13,7 @@ const Footer = () => {
       <div className="flex flex-col md:flex-row md:justify-between">
         <div className="mb-8 lg:mb-0">
           <h1 className="lg:text-2xl mb-2 font-bold">ANAÏS CAVAILLÉ</h1>
-          <p className="text-sm">Développeur Web et Web mobile Bilingue</p>
+          <p className="text-sm">Développeuse Web Fullstack Bilingue</p>
         </div>
         <div>
           <h1 className="lg:text-2xl mb-3 font-bold">RESEAUX SOCIAUX</h1>

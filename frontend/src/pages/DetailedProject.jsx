@@ -47,7 +47,9 @@ const DetailedProject = () => {
               target="_blank"
               rel="noreferrer"
               className={
-                project.id === 2 || project.id === 5 ? "hidden" : "flex"
+                project.id === 2 || project.id === 4 || project.id === 7
+                  ? "hidden"
+                  : "flex"
               }
             >
               <button className="bg-almost-white text-almost-black my-4 w-28 md:w-44 h-12 md:h-14 md:text-xl rounded-md shadow-lg font-bold --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300">
@@ -71,7 +73,7 @@ const DetailedProject = () => {
                   src={project.video}
                   controls
                   className={
-                    project.id === 2 || project.id === 5
+                    project.id === 2 || project.id === 4
                       ? "flex my-8 rounded-3xl w-full"
                       : "hidden"
                   }
@@ -85,17 +87,31 @@ const DetailedProject = () => {
               </div>
 
               <div>
-                <h2 className="font-bold text-2xl md:text-3xl mb-6 mt-16">
-                  Regardez par vous-même !
-                </h2>
+                {project.id !== 6 && project.id !== 7 && (
+                  <h2 className="font-bold text-2xl md:text-3xl mb-6 mt-16">
+                    Regardez par vous-même !
+                  </h2>
+                )}
                 <div className="flex flex-col items-center md:flex-row md:gap-7">
-                  <a href={project.lienGithub} target="_blank" rel="noreferrer">
-                    <button className="bg-blue-button text-almost-white my-4 w-56 h-12 md:h-14 md:text-xl rounded-md shadow-lg --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300">
-                      Repo Github
-                    </button>
-                  </a>
+                  {project.id !== 6 && project.id !== 7 && (
+                    <a
+                      href={project.lienGithub}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <button className="bg-blue-button text-almost-white my-4 w-56 h-12 md:h-14 md:text-xl rounded-md shadow-lg --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300">
+                        Repo Github
+                      </button>
+                    </a>
+                  )}
                   <Link to="/">
-                    <button className="text-blue-button border-blue-button border-2 my-4 w-56 h-12 md:h-14 md:text-xl rounded-md shadow-lg --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300">
+                    <button
+                      className={
+                        project.id !== 6 && project.id !== 7
+                          ? "text-blue-button border-blue-button border-2 my-4 w-56 h-12 md:h-14 md:text-xl rounded-md shadow-lg --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300"
+                          : "text-blue-button border-blue-button border-2 my-16 w-56 h-12 md:h-14 md:text-xl rounded-md shadow-lg --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300"
+                      }
+                    >
                       Retour accueil
                     </button>
                   </Link>

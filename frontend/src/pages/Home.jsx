@@ -4,10 +4,15 @@ import AboutMe from "./AboutMe";
 import Contact from "./Contact";
 import Projets from "./Projects";
 
+import profilePicture from "../assets/profile-picture.png";
+
 const Home = () => {
   return (
     <div id="home">
-      <div className="bg-blue-bg py-16 min-h-screen md:min-h-full flex flex-col items-center justify-center min-[1800px]:px-56">
+      <div className="bg-blue-bg py-16 min-h-screen md:min-h-full flex md:flex-col lg:flex-row items-center justify-center min-[1800px]:px-56">
+        <div className="hidden md:block md:w-1/4 lg:w-full">
+          <img src={profilePicture} alt="Photo de profil" />
+        </div>
         <div className="text-almost-white  mx-4 md:mx-6 lg:mx-28 flex flex-col items-center justify-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center md:my-8 leading-relaxed md:leading-relaxed lg:leading-relaxed">
             BONJOUR, JE M&apos;APPELLE ANAÏS CAVAILLÉ
@@ -15,7 +20,7 @@ const Home = () => {
           <p className="text-md md:text-2xl text-center my-8 md:m-8 leading-relaxed md:leading-relaxed lg:leading-relaxed">
             Découvrez mon parcours de reconversion professionnelle au sein du
             monde passionnant du développement informatique. En tant que
-            développeur fullstack, j&apos;ai combiné ma détermination à
+            développeuse fullstack, j&apos;ai combiné ma détermination à
             apprendre et ma passion pour la technologie pour créer des
             expériences numériques innovantes.
           </p>

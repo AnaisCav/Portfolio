@@ -2,30 +2,9 @@
 import { Link as ScrollTo } from "react-scroll";
 import { Link } from "react-router-dom";
 
-import img from "../assets/profile-picture.png";
-
 const Navbar = () => {
   return (
-    <div className=" flex justify-between items-center h-20 lg:h-24 md:pr-4 bg-almost-white drop-shadow-lg text-gray-800">
-      <div className="flex justify-around lg:justify-evenly ml-4 md:ml-6 lg:ml-12 items-center">
-        <label tabIndex={0} className="btn btn-circle cursor-default avatar">
-          <img src={img} alt="Photo de Anaïs Cavaillé" />
-        </label>
-        <ScrollTo
-          to="home"
-          spy={true}
-          smooth={true}
-          offset={-96}
-          duration={500}
-          className="cursor-pointer"
-        >
-          <Link to="/">
-            <p className="text-lg md:text-md lg:text-xl font-bold ml-2 lg:ml-4">
-              ANAÏS CAVAILLÉ
-            </p>
-          </Link>
-        </ScrollTo>
-      </div>
+    <div className=" flex justify-end items-center h-20 lg:h-24 md:pr-4 bg-almost-white drop-shadow-lg text-gray-800">
       <div>
         <div className="dropdown md:hidden">
           <label tabIndex={0} className="btn btn-ghost md:hidden">

@@ -24,11 +24,14 @@ const AboutMe = () => {
           <p className="text-gray-500 mb-3">
             Hey! Je m&apos;appelle{" "}
             <span className="font-bold">Anaïs Cavaillé </span> et j&apos;habite
-            à Toulouse. Actuellement en formation de{" "}
-            <span className="font-bold">Développeur Web et Web mobile</span> à
-            la <span className="font-bold">Wild Code School</span>, j&apos;ai pu
-            déjà mettre mes compétences à exécution en travaillant sur plusieurs
-            projets de groupe.
+            à Toulouse. Actuellement en formation en alternance pour le titre de{" "}
+            <span className="font-bold">
+              Concepteur Développeur d&apos;Application
+            </span>{" "}
+            à la <span className="font-bold">Wild Code School</span>, j&apos;ai
+            pu déjà mettre mes compétences à exécution en travaillant pour la
+            start-up <span className="font-bold">MonitoHR</span> mais également
+            sur un projet de groupe avec l&apos;école.
           </p>
           <p className="text-gray-500 mb-3">
             Ayant travaillé quelques années dans le commerce international,
