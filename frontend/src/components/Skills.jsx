@@ -1,21 +1,31 @@
 const Skills = () => {
   const languages = [
-    "HTML",
-    "CSS",
     "Javascript",
-    "React",
-    "GIT",
-    "Figma",
+    "Typescript",
+    "React.js",
+    "Next.js",
     "Tailwind",
     "SASS",
     "Emotion",
     "Styled Components",
+    "Node.js",
     "Express",
     "MySQL",
+    "MongoDB",
+    "GraphQL",
+    "Apollo",
+    "PostgreSQL",
+    "Docker",
+    "Jest",
+    "CI (Github Actions)",
+    "Cypress",
+    "GIT",
+    "Figma",
     "Méthodologie Agile",
+    "Scrum",
   ];
   return (
-    <div className="flex gap-4 flex-wrap">
+    <div className="flex gap-4 flex-wrap justify-between">
       {languages.map((language, index) => (
         <p
           key={index}

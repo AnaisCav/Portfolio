@@ -32,19 +32,24 @@ const Projets = () => {
       </div>
       <div className="mx-8">
         {projectsData &&
-          projectsData.map((projet) => (
-            <ProjectCard
-              key={projet.id}
-              id={projet.id}
-              name={projet.name}
-              image={projet.image}
-              rapideDescription={projet.rapideDescription}
-              longueDescription={projet.longueDescription}
-              langages={projet.langages}
-              lienGithub={projet.lienGithub}
-              lienSite={projet.lienSite}
-            />
-          ))}
+          projectsData
+            .sort((a, b) => b.id - a.id)
+            .map(
+              (projet, index) =>
+                index < 4 && (
+                  <ProjectCard
+                    key={projet.id}
+                    id={projet.id}
+                    name={projet.name}
+                    image={projet.image}
+                    rapideDescription={projet.rapideDescription}
+                    longueDescription={projet.longueDescription}
+                    langages={projet.langages}
+                    lienGithub={projet.lienGithub}
+                    lienSite={projet.lienSite}
+                  />
+                )
+            )}
       </div>
     </div>
   );
