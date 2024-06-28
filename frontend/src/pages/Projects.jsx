@@ -5,6 +5,7 @@ import ProjectCard from "../components/ProjectCard";
 
 const Projets = () => {
   const [projectsData, setProjectData] = useState([]);
+  const [showAllProjects, setShowAllProjects] = useState(false); // State to track button click
 
   useEffect(() => {
     axios
@@ -15,6 +16,10 @@ const Projets = () => {
       .catch((error) => console.error(error));
     window.scrollTo(0, 0);
   }, []);
+
+  const handleShowAllProjects = () => {
+    setShowAllProjects(!showAllProjects);
+  };
 
   return (
     <div
@@ -36,7 +41,7 @@ const Projets = () => {
             .sort((a, b) => b.id - a.id)
             .map(
               (projet, index) =>
-                index < 4 && (
+                (showAllProjects || index < 3) && (
                   <ProjectCard
                     key={projet.id}
                     id={projet.id}
@@ -51,6 +56,25 @@ const Projets = () => {
                 )
             )}
       </div>
+      {!showAllProjects ? (
+        <div className="flex w-full justify-center">
+          <button
+            className="text-blue-button my-4 w-28 md:w-44 h-12 md:h-14 md:text-xl font-semibold --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300"
+            onClick={handleShowAllProjects}
+          >
+            La suite &gt;&gt;
+          </button>
+        </div>
+      ) : (
+        <div className="flex w-full justify-center">
+          <button
+            className="text-blue-button my-4 w-28 md:w-44 h-12 md:h-14 md:text-xl font-semibold --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300"
+            onClick={handleShowAllProjects}
+          >
+            &lt;&lt; Réduire
+          </button>
+        </div>
+      )}
     </div>
   );
 };
